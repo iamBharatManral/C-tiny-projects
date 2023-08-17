@@ -1,6 +1,7 @@
+#include <stdlib.h>
 #include <stdio.h>
 
 int main() {
-    printf("Hello, World!\n");
-    return 0;
+    printf("Welcome to Tiny C Projects!");
+    return EXIT_SUCCESS;
 }
