@@ -9,7 +9,15 @@ void greet01(){
     printf("Hello, Bharat!\n");
 }
 
-int main(void){
-    greet01();
+void greet02(int argc, char* argv[]){
+    if ( argc < 2 ) {
+        puts("Hello, you handsome beast!");
+    } else {
+        printf("Hello, %s!\n", argv[1]);
+    }
+}
+
+int main(int argc, char* argv[]){
+    greet02(argc, argv);
     return EXIT_SUCCESS;
 }
